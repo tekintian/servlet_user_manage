@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ead8cfd-b6cb-4e9c-872b-9d264c310996" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/view/ManageUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/controller/LoginClServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/controller/LoginClServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/view/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/view/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9ead8cfd-b6cb-4e9c-872b-9d264c310996" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -115,8 +105,8 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+            <state relative-caret-position="135">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -597,7 +587,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -1001,12 +991,12 @@
       <updated>1525175717466</updated>
       <workItem from="1525175722888" duration="3593000" />
       <workItem from="1525179389464" duration="12059000" />
-      <workItem from="1525257649093" duration="15312000" />
+      <workItem from="1525257649093" duration="16002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30964000" />
+    <option name="totallyTimeSpent" value="31654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1019,11 +1009,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="sbt" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.20533334" side_tool="true" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.20533334" side_tool="true" visible="true" weight="0.5287107" />
       <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.7936" weight="0.32900432" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
@@ -1043,13 +1032,13 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.4992" weight="0.32900432" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.79466665" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.79466665" visible="true" weight="0.5287107" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49813333" weight="0.32900432" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6728061" visible="true" weight="0.2304" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.67126435" visible="true" weight="0.2304" />
       <window_info anchor="right" id="AppDynamics" order="3" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" sideWeight="0.49866667" weight="0.32900432" />
       <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="2" sideWeight="0.32719395" side_tool="true" visible="true" weight="0.2304" />
+      <window_info id="Web" order="2" sideWeight="0.32873562" side_tool="true" visible="true" weight="0.2304" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.16853334" />
@@ -1397,8 +1386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        <state relative-caret-position="135">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -5,3 +5,6 @@ java servlet_user_manage demo project ,  Just for Learning Java Servlet
 
 
 
+
+Git本地创建后再增加远程git仓库合并问题解决：
+git pull origin master --allow-unrelated-histories
