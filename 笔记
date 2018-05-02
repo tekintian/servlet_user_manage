@@ -112,15 +112,78 @@ String temp=java.net.URLEncoder.encode(“传奇.mp3”,”utf-8”);		//统一�
 Response.setHeader(“Content-Disposition”,”attachment;filename=”+temp);
 
 
+response细节
+1. getOutStream和getWriter方法分别用于得到输出二进制数据、文本数据的ServletOutputStream、PrintWriter对象。
+2. 在同一个response对象中getOutputStream和getWriter这两个方法互相排斥，调用其中一个方法后，就不能再调用另外一个方法。
+3. Servlet程序向ServletOutputSteam或PrintWriter对象中写入的数据将被Servlet引擎从response里面获取，Servlet引擎将这些数据当作相应消息的正文，然后再与相应状态行和各相应头组合后输出到客户端。
+4.Servlet的service方法结束后，Servlet引擎将检查getWriter或getOutputSteam方法返回的输出流对象是否已经调用close方法，如果没有，Servlet引擎将调用之关闭输出流对象。
+
+HttpServletRequest对象的详解					该对象表示浏览器的请求(http请求), 当web 服务器得到该请求后，会把请求信息封装成一个HttpServletRequest 对象
+•getRequestURL方法返回客户端发出请求时的完整URL。
+•getRequestURI方法返回请求行中的资源名部分。
+•getQueryString 方法返回请求行中的参数部分(参数名+值)。
+该函数可以获取请求部分的数据 比如  http://localhost/web名?username=abc&pwd=123
+request.getQueryString(); 就会得到  username=abc&pwd=123
+
+getRemoteAddr方法返回发出请求的客户机的IP地址
+getRemoteHost方法返回发出请求的客户机的完整主机名  如果客户机没有在dns上注册(一般上网，要提供一个域名让别人去访问) 则返回ip地址
+pw.println("你的IP="+req.getRemoteAddr()+"<br>");
+pw.println("你的机器名是"+req.getRemoteHost()+"<br>");
+getRemotePort方法返回客户机所使用的网络端口号
+客户机的端口号是随机选择的，web服务器的端口号是一定的
+getLocalPort方法返回web服务器所使用的网络端口号
+getLocalAddr方法返回WEB服务器的IP地址。
+getLocalName方法返回WEB服务器的主机名
+url 和 uri 的区别
+比如：
+	Url=http://localhost:8088/servletPort3/GetinfoServlet 完整的请求
+	Uri=/servletPort3/GetinfoServlet web应用的名称+资源的名称
+
+请求转发requeset.getRequestDispatcher(资源地址).forward(request,response);
+资源地址：不需要项目名。因为它只是在WEB服务器内部转发。
+Request.getRequestDispatcher(资源地址).forward(request,response);
+我们现在使用 请求转发的方法来实现上次我们使用 response.sendRedirect() 实现效果
+使用 request提供的转发方法.
+
+Request中的Attribute在一次请求有效。一次请求：没有返回到浏览器，就为一次请求。
+
+1.使用 forward 不能转发到 该web应用外的 url
+2.因为 forward 是发生在web服务器，所以 Servlet1 和 Servlet 2使用的是用一个request 和response.
+使用sendRedirect() 方法不能通过request.setAttribute() 把 属性传递给下一个Servlet
+
+比较sendRedirect()和request.getRequestDispatcher().forward(request,response)
+请问  sendRedirect() 和 forward 的区别是什么		答:
+(1)叫法:   sendRedirect() 重定向,转发  forward() 叫转向
+(2)实际发生的位置不一样:  sendRedirect 发生 浏览器;  forward 发生 web服务器.
+(3)用法不一样
+request.getRequestDispatcher(“/资源URI”).forward(request,response)
+response.sendRedirect(“/web应用/资源URI”);
+(4)能够去URL 范围不一样
+sendRedirect 可以去 外边URL;   forward 只能去当前的WEB应用的资源
+
+小练习:
+使用uml 软件，画出  forward 和 sendRedirect() 的流程.
+
+☞　如果转发多次，我们的浏览器地址栏，保留的是第一次 转向的那个Servlet Url
+
+☞ 什么是一次 http请求:
+只要没有停止，也没有回到浏览器重定向，就算一次			比如；
 
 
 
+create table users (id int primary key,
+ username varchar(32) not null,
+ email varchar(64) not null,
+ grade int default 1,
+ passwd varchar(32) not null,
+ unknow varchar(32) null,
+ remark varchar(32) null
+ )
 
-
-
-
-
-
-
+insert into users values(1,'aaaaa1','aaaa1@sohu.com',1,'123','','');
+insert into users values(2,'aaaaa2','aaaa2@sohu.com',1,'123','','');
+insert into users values(3,'aaaaa3','aaaa3@sohu.com',1,'123','','');
+insert into users values(4,'aaaaa4','aaaa4@sohu.com',1,'123','','');
+insert into users values(5,'aaaaa5','aaaa5@sohu.com',5,'123','','');
 
 
