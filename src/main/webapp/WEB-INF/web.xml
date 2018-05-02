@@ -33,6 +33,10 @@
         <servlet-name>GetRequestHeader</servlet-name>
         <servlet-class>cn.tekin.GetRequestHeader</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ManageUsers</servlet-name>
+        <servlet-class>cn.tekin.view.ManageUsers</servlet-class>
+    </servlet>
 
     <!--<servlet>-->
         <!--<servlet-name>LoginClServlet</servlet-name>-->

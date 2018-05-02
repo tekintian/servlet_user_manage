@@ -20,7 +20,7 @@ public class MainFrame extends HttpServlet {
 
 //        取出session
         User user=(User)request.getSession().getAttribute("userObj");
-        out.println("<br/>  SessionObjectUsername= "+user.getName()+"   "+user.getPwd()+"<br/>");
+        out.println("<br/>  SessionObjectUserid= "+user.getId()+"   "+user.getPwd()+"<br/>");
 
 
 
