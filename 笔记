@@ -1,0 +1,126 @@
+http响应消息头详解
+Location: http://www.baidu.org/index.jsp  【让浏览器重新定位到url】
+Server:apache tomcat 【告诉浏览器我是tomcat】
+Content-Encoding: gzip 【告诉浏览器我使用 gzip】
+Content-Length: 80  【告诉浏览器会送的数据大小80节】
+Content-Language: zh-cn 【支持中文】
+Content-Type: text/html; charset=GB2312 [内容格式text/html; 编码gab2312]
+Last-Modified: Tue, 11 Jul 2000 18:23:51 GMT 【告诉浏览器，该资源上次更新时间】
+Refresh: 1;url=http://www.baidu.com 【过多久去，刷新到 http://www.baidu.com】
+Content-Disposition: attachment; filename=aaa.zip 【告诉浏览器，有文件下载】
+Transfer-Encoding: chunked 校验盒 [传输的编码]
+Set-Cookie:SS=Q0=5Lb_nQ; path=/search[后面详讲]
+Expires: -1[告诉浏览器如何缓存页面IE]
+Cache-Control: no-cache  [告诉浏览器如何缓存页面火狐]
+Pragma: no-cache   [告诉浏览器如何缓存页面]
+Connection: close/Keep-Alive   [保持连接 1.1是Keep-Alive]
+Date: Tue, 11 Jul 2000 18:23:51 GMT
+
+①定时刷新Refresh使用
+ response.setHeader("Refresh", "5;url=/servletPro/Servlet2");
+
+②文件下载 Content-Disposition 
+public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		response.setContentType("text/html");
+		//PrintWriter out = response.getWriter();
+		
+		//演示下载文件, 没有这一句 只能在页面上显示图片
+		response.setHeader("Content-Disposition", "attachment; filename=winter.jpg");
+		
+		//打开文件.说明一下web 站点下载文件的原理
+		//1.获取到要下载文件的全路径
+		String path=this.getServletContext().getRealPath("/images/Winter.jpg");
+		//System.out.println("path="+path);
+		//2创建文件输入流
+		FileInputStream fis=new FileInputStream(path);
+		//做一个缓冲字节数组
+		byte buff[]=new byte[1024];
+		int len=0;//表示实际每次读取了多个个字节
+		OutputStream os=response.getOutputStream();
+		while((len=fis.read(buff))>0){
+			
+			os.write(buff, 0, len);
+		}
+		//缺点: 没有进度条./图标/
+		
+		//关闭
+		os.close();
+		fis.close();
+	}
+
+
+ ③缓存讲解
+提出问题：浏览器默认情况下，会缓存我们的页面，这样出现一个问题：如果我们的用户习惯把光标停留在地址栏，然后回车来取页面，就会默认调用cache中取数据。
+（1）有些网站要求及时性很高，因此要求我们不缓存页面
+代码：
+//指定该页面不缓存 Ie
+		response.setDateHeader("Expires", -1);//【针对IE浏览器设置不缓存】
+		//为了保证兼容性.
+		response.setHeader("Cache-Control", "no-cache");//【针对火狐浏览器等】
+		response.setHeader("Pragma", "no-cache");//【其他浏览器】
+（2）有些网站要求网页缓存一定时间,比如缓存一个小时
+response.setDateHeader("Expires", System.currentTimeMillis()+3600*1000*24);	//后面一个参数表示设置的缓存保持时间，-1表示永远缓存
+
+
+HttpServletResponse的再说明
+getWriter()
+getOutputStream();
+
+区别
+1.getWriter() 用于向客户机回送字符数据
+2.getOutputStream() 返回的对象，可以回送字符数据，也可以回送字节数据(二进制数据)
+OutputStream os=response.getOutputStream();
+os.write("hello,world".getBytes());
+
+如何选择:
+如果我们是回送字符数据，则使用  PrintWriter对象 ,效率高
+如果我们是回送字节数据(binary date) ,则只能使用 OutputStream
+☞ 这两个流不能同时使用.
+
+说明:  基本格式:
+response.sendRedirect(“servlet的地址?参数名=参数值&参数名=参数值...”);
+
+☞ 参照值是String , 参数名应当使用 字母组合
+
+使用sendRedirect()	
+response.sendRedirect("/UsersManager/MainFrame?uname="+username+"&pwd="+password);
+在接受数据的Servlet中：
+String 参数=request.getParameter(“参数名”);
+
+3.使用session 传递[后面讲]			这里，我们先预热.
+②使用session()来传递字符参数和对象
+A.传递字符串  //3. 使用session来传递数据给下个页面
+放入session   request.getSession ().setAttribute("loginUser",username); 
+取出session	 在JSP中通过session取出 request.getSession.getAttribute("loginUser");
+//3. 使用session来传递数据给下个页面
+request.getSession().setAttribute("loginUser",username2);		
+String username3=(String) request.getSession().getAttribute("loginUser");
+out.println("<br/>  SessionUsername= "+username3+"<br/>");
+
+B．传递对象
+User user= new User();
+user.setName(“xiaoli”);
+user.setPassWord(“123”);
+
+下载提示框中文乱码
+补充一个知识点: 当我们下载文件的时候，可能提示框是中文乱码 
+String temp=java.net.URLEncoder.encode("传奇.mp3","utf-8");
+response.setHeader("Content-Disposition","attachment; filename="+temp);
+String temp=java.net.URLEncoder.encode(“传奇.mp3”,”utf-8”);		//统一资源定位
+Response.setHeader(“Content-Disposition”,”attachment;filename=”+temp);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
