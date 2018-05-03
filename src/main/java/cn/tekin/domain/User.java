@@ -4,6 +4,24 @@ public class User {
     private String name;
     private String pwd;
     private String id;
+    private String email;
+    private String grade;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getGrade() {
+        return grade;
+    }
+
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
 
     public String getId() {
         return id;

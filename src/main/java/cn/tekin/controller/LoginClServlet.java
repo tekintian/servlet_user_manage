@@ -87,6 +87,9 @@ public class LoginClServlet extends HttpServlet {
             User user=new User();
             user.setId(id);
             user.setPwd(password);
+            user.setName(rs.getString("username"));
+            user.setEmail(rs.getString("email"));
+            user.setGrade(rs.getString("grade"));
             request.getSession().setAttribute("userObj",user);
                 //说明该用户合法:  能用请求转发就不要使用 重定向
                 request.getRequestDispatcher("/MainFrame").forward(request, response);
