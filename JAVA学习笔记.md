@@ -1,4 +1,26 @@
-http响应消息头详解
+# JAVA中,equal和==的区别
+一、比较对象为基本数据类型（byte,short,char,int,long,float,double,boolean）
+比较两个基本数据类型是否相等用==，因为只有类才会有equals方法。
+备注：String不是基本数据类型
+
+二、比较对象为引用数据类型
+euqals和==本质上都是比较比较的是两个对象的引用（内存地址）是否相同。equals()是Object类的方法 ，object类是所有类的基类，所以每个类都会继承equals（）方法。
+但在String,Integer,Date在这些类当中重写了equals方法，而不再是比较对象在堆内存中的存放地址了，而是比较它们指向的实体（内容）是否相同。
+
+
+==比较的是对象引用的地址，也就是是否是同一个对象； 
+equal比较的是对象的值。 
+例如：
+Integer r1 = new Integer(900);//定义r1整型对象 
+Integer r2 = new Integer(900);//定义r2整型对象 
+System.out.println(r1==r2);//返回false 
+System.out.println(r1.equal(r2));//返回true
+
+在String比较字符串的时候一定要使用equal，否则会发现字符串一样也判断不等，这是初学者容易出错的地方。
+
+
+
+## http响应消息头详解
 Location: http://www.baidu.org/index.jsp  【让浏览器重新定位到url】
 Server:apache tomcat 【告诉浏览器我是tomcat】
 Content-Encoding: gzip 【告诉浏览器我使用 gzip】

@@ -6,6 +6,26 @@ public class User {
     private String id;
     private String email;
     private String grade;
+    private String unknow;
+    private String remark;
+
+    public String getUnknow() {
+        return unknow;
+    }
+
+    public void setUnknow(String unknow) {
+        this.unknow = unknow;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+
 
     public String getEmail() {
         return email;

@@ -16,8 +16,8 @@ public class MyInitServlet extends HttpServlet {
         System.out.println("创建数据库，表，读取参数");
 
         //开启服务器线程
-        CheckMyTaskThread myst = new CheckMyTaskThread();
-        myst.start();
+//        CheckMyTaskThread myst = new CheckMyTaskThread();
+//        myst.start();
         //  start 开启线程
     }
 

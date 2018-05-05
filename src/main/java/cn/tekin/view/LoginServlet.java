@@ -25,8 +25,8 @@ public class LoginServlet extends HttpServlet {
         out.println("<h1>用户登录</h1>");
         //action 应该这样写  /web应用名/Servlet的url
         out.println("<form action='"+ request.getContextPath() +"/LoginClServlet' method='post'>");
-        out.println("用户ID：<input type='text' name='id'/><br/><br/>");
-        out.println("密　码：<input type='password' name='password'/><br/><br/>");
+        out.println("用户名：<input type='text' name='username'/><br/><br/>");
+        out.println("密　码：<input type='password' name='passwd'/><br/><br/>");
         out.println("<input type='submit' value='登录'/><br/>");
         out.println("</form>");
         String errorInfo = (String) request.getAttribute("error");
