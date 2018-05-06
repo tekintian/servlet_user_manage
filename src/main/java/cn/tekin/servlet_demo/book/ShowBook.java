@@ -30,7 +30,7 @@ public class ShowBook extends HttpServlet {
         for (Book book : mydb) {
             //	out.println(book.getName()+"<a href='/myCart/BuyBookCl?id="+book.getId()+"'>点击购买</a><br/>");
             //希望href 的样式是href="/myCart/BuyBookCl?id=x&JSESSION=x21ak"
-            String url = response.encodeURL(HOME_URL + "/demo/book/BuyBookCl?id=" + book.getId());
+            String url = response.encodeURL(HOME_URL + "demo/book/BuyBookCl?id=" + book.getId());
             out.println(book.getName() + "<a href='" + url + "'>点击购买</a><br/>");
         }
     }

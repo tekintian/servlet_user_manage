@@ -26,10 +26,15 @@ final public class DB {
         book4.setId("4");
         book4.setName("C++");
 
+        Book book5 = new Book();
+        book5.setId("5");
+        book5.setName("PHP");
+
         al.add(book1);
         al.add(book2);
         al.add(book3);
         al.add(book4);
+        al.add(book5);
     }
 
     private DB() {}    //构造函数 单态

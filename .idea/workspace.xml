@@ -7,13 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ead8cfd-b6cb-4e9c-872b-9d264c310996" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/BuyBookCl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/BuyBookCl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/ShowBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/ShowMyCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowMyCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowMyCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowMyCart.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -120,118 +116,7 @@
     <favorites_list name="servlet_user_manage" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginClServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/controller/LoginClServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="14" column="61" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManageUsers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/ManageUsers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuyBookCl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/BuyBookCl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="109" column="49" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/DB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShowBook.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowBook.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShowMyCart.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowMyCart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="933">
-              <caret line="53" column="60" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="64" column="65" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/LoginServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/service/UsersService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1487#1493#0" expanded="true" />
-                <element signature="e#2764#2770#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -656,7 +541,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/SHA.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/SHAUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/HASHUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/HashEncrypt.java" />
@@ -704,9 +588,10 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/controller/LoginClServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/view/ManageUsers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowMyCart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowBook.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/BuyBookCl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/DB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowBook.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowMyCart.java" />
       </list>
     </option>
   </component>
@@ -1129,7 +1014,7 @@
       <workItem from="1525525658802" duration="5540000" />
       <workItem from="1525532269882" duration="6177000" />
       <workItem from="1525565059105" duration="30219000" />
-      <workItem from="1525605929372" duration="10056000" />
+      <workItem from="1525605929372" duration="12234000" />
     </task>
     <task id="LOCAL-00001" summary="bootstrap 样式增加  cookie 测试">
       <created>1525573386393</created>
@@ -1173,11 +1058,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525617440932</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="购物车演示案例">
+      <created>1525618306035</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1525618306035</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139712000" />
+    <option name="totallyTimeSpent" value="141890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1190,11 +1082,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="sbt" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.19413333" side_tool="true" visible="true" weight="0.5005417" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.19466667" side_tool="true" visible="true" weight="0.49945828" />
       <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.79146665" weight="0.32827735" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
@@ -1212,14 +1103,14 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.49866667" weight="0.32827735" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49333334" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.80586666" visible="true" weight="0.5005417" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49546668" weight="0.17768148" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7483731" visible="true" weight="0.25173333" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4928" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8053333" weight="0.49945828" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4944" weight="0.17768148" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74891776" visible="true" weight="0.25173333" />
       <window_info anchor="right" id="AppDynamics" order="3" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" sideWeight="0.49706668" weight="0.32827735" />
       <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="2" sideWeight="0.2516269" side_tool="true" visible="true" weight="0.25173333" />
+      <window_info id="Web" order="2" sideWeight="0.25108224" side_tool="true" visible="true" weight="0.25173333" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.584" weight="0.27193934" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.16853334" />
@@ -1254,7 +1145,8 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="更新笔记" />
     <MESSAGE value="session context servlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="session context servlet" />
+    <MESSAGE value="购物车演示案例" />
+    <option name="LAST_COMMIT_MESSAGE" value="购物车演示案例" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1644,8 +1536,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="567">
+          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowBook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowMyCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/BuyBookCl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1334">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1653,33 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowMyCart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="933">
-          <caret line="53" column="60" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/ShowBook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/book/BuyBookCl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="109" column="49" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

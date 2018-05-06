@@ -51,7 +51,7 @@ public class ShowMyCart extends HttpServlet {
 
         //	out.println("<br/><br/><a href='/myCart/ShowBook'>返回购物大厅</a>");
         //这里也需要地址重写
-        String url = response.encodeURL(HOME_URL + "/demo/book/ShowBook");
+        String url = response.encodeURL(HOME_URL + "demo/book/ShowBook");
         out.println("<br/><br/><a href='" + url + "'>返回购物大厅</a>");
     }
 
