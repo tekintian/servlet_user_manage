@@ -2,17 +2,14 @@ package cn.tekin.view;
 
 import cn.tekin.domain.User;
 import cn.tekin.service.UsersService;
-import cn.tekin.utils.SqlHelper;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.*;
 import java.util.ArrayList;
 
 @WebServlet("/ManageUsers")
@@ -36,11 +33,12 @@ public class ManageUsers extends HttpServlet {
 //SESSION
 
         PrintWriter out = response.getWriter();
-            out.println("<title>用户列表</title>+" +
-                "<link href=\"https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css\" rel=\"stylesheet\">+" +
-                "<div class='container'>+" +
+            out.println("<title>用户列表</title>" +
+                "<link href=\"https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css\" rel=\"stylesheet\">+" + "<div class='container'>" +
                 "<img src=./images/welcome.png>");
-        out.println("Hi "+ user.getName() +"，欢迎登陆用户管理中心  <a href='" + getServletContext().getContextPath() + "/MainFrame'>返回主界面</a> <a href='"+ home_url +"LoginServlet'>安全退出</a> <hr/>");
+            out.println("Hi " + user.getName() + "，欢迎登陆用户管理中心  " +
+                "<a href='" + getServletContext().getContextPath() + "/MainFrame'>返回主界面</a> " +
+                "<a href='" + home_url + "LoginClServlet'>安全退出</a> <hr/>");
         out.println("<h1>管理用户</h1>");
 
         //定义分页需要的变量
@@ -73,14 +71,30 @@ public class ManageUsers extends HttpServlet {
             int endx=1;
             int step=4;//分页显示步长
 
+            String keywords = request.getParameter("keywords");
+
         try {
 
             UsersService usersService=new UsersService();
 
             //获取总页数
-            pageCount = usersService.getPageCount(pageSize);
-
+            rowCount = usersService.getRowCount();
             ArrayList<User> al=usersService.getUsersByPage(pageNow,pageSize);
+
+            if (keywords != null) {
+                //                keywords=URLDecoder.decode(keywords,"utf-8");
+                keywords = keywords.trim();
+                System.out.println("关键词：" + keywords);
+                rowCount = usersService.getRowCountBykws(keywords);
+
+                al = usersService.getUserList(keywords, pageNow, pageSize);
+            }
+
+            pageCount = (rowCount - 1) / pageSize + 1;
+
+            out.println("<form action='" + home_url + "/ManageUsers' method=get>");
+            out.println("搜索：<input type='text' name='keywords' placeholder='请输入用户名或者email进行查找'/><input type='submit'value='搜索'/>");
+            out.println("</form>");
 
             out.println("<table width=90%>");
             out.println("<tr><th>id</th><th>用户名</th><th>email</th><th>级别</th><th>密码</th><th>备注</th><th>管理</th></tr>");
@@ -104,14 +118,27 @@ public class ManageUsers extends HttpServlet {
 
            if (pageNow!=1) {
                //显示上一页
-               out.println("<a href='" + home_url + "ManageUsers?pageNow=" + (pageNow-1) + "'>上一页</a> ");
+               if (keywords == null) {
+                   out.println("<a href='" + home_url + "ManageUsers?pageNow=" + (pageNow - 1) + "'>上一页</a> ");
+               }
+               else {
+                   out.println("<a href='" + home_url + "ManageUsers?pageNow=" + (pageNow - 1) + "&keywords=" + keywords + "'>上一页</a> ");
+               }
+
            }
             //显示分页
             beginx=pageNow;
             endx=pageNow;
             if(pageNow-step>0) beginx=pageNow-step;
             if(pageNow+step<=pageCount) endx=pageNow+step;
-            for(int i=beginx;i<=endx;i++) out.println("<a href='"+ home_url +"ManageUsers?pageNow="+i+"'><"+i+"></a>");
+            for (int i = beginx; i <= endx; i++) {
+                if (keywords == null) {
+                    out.println("<a href='" + home_url + "ManageUsers?pageNow=" + i + "'><" + i + "></a>");
+                }
+                else {
+                    out.println("<a href='" + home_url + "ManageUsers?pageNow=" + i + "&keywords=" + keywords + "'><" + i + "></a>");
+                }
+            }
 
 
            /*
@@ -123,11 +150,17 @@ public class ManageUsers extends HttpServlet {
             }*/
             if (pageNow!=pageCount) {
                 //显示上一页
-                out.println("<a href='" + home_url + "ManageUsers?pageNow=" + (pageNow + 1) + "'>下一页</a> ");
+                if (keywords == null) {
+                    out.println("<a href='" + home_url + "ManageUsers?pageNow=" + (pageNow + 1) + "'>下一页</a> ");
+                }
+                else {
+                    out.println("<a href='" + home_url + "ManageUsers?pageNow=" + (pageNow + 1) + "&keywords=" + keywords + "'>下一页</a> ");
+                }
+
             }
 
             //显示分页信息
-            out.println("&nbsp;&nbsp;&nbsp;当前页"+pageNow+"/总页数"+pageCount+"  每页："+ pageSize +"条数据<br/><br/>");
+            out.println("&nbsp;&nbsp;&nbsp;当前页" + pageNow + "/总页数" + pageCount + "  每页：" + pageSize + "条<br/><br/>");
             out.println("跳转到<input type='text' id='pageNow' name='pageNow'/><input type='button' onClick='gotoPageNow()' value='跳'/>");
 
 // JS

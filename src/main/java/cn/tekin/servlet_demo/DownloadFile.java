@@ -1,6 +1,5 @@
 package cn.tekin.servlet_demo;
 
-import javax.jnlp.FileSaveService;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,8 +9,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-@WebServlet(name = "Servlet3",value = "/getfile.do")
-public class Servlet3 extends HttpServlet {
+@WebServlet(name = "DownloadFile", value = {"/getfile.do", "/DownloadFile"})
+public class DownloadFile extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }

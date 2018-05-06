@@ -146,6 +146,7 @@ public class SqlHelper {
             ct = getConnection();
             ps = ct.prepareStatement(sql);
             if (parameters != null && !parameters.equals("")) {
+                System.out.println("参数数量：" + parameters.length);
                 for (int i = 0; i < parameters.length; i++) {
                     ps.setString(i + 1, parameters[i]);
                 }

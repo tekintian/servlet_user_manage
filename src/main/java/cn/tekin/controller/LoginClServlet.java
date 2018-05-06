@@ -6,10 +6,7 @@ import cn.tekin.utils.HashEncrypt;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
@@ -24,6 +21,9 @@ public class LoginClServlet extends HttpServlet {
         response.setCharacterEncoding("utf-8");
         String DATE_FORMAT = getServletContext().getInitParameter("DATE_FORMAT");
 
+        HttpSession session = request.getSession();//创建session 会话
+
+
 
         //获取时间戳
         long longTime = new Date().getTime();
@@ -31,7 +31,7 @@ public class LoginClServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         int atcount = -1;
 
-        //定义cookie
+
         String username = request.getParameter("username");
         String passwd = request.getParameter("passwd");
         String isRember = request.getParameter("isRember");
@@ -70,7 +70,8 @@ public class LoginClServlet extends HttpServlet {
             // if (userservice.checkUser(usr)) {//验证成功
             if (userservice.checkLogin(usr) != null) {//验证成功
                 //将用户对象放入session中
-                request.getSession().setAttribute("userObj", userservice.checkLogin(usr));
+                //                request.getSession().setAttribute("userObj", userservice.checkLogin(usr));
+                session.setAttribute("userObj", userservice.checkLogin(usr));
 
                 System.out.println("Longtime:" + Long.toString(longTime));
 
@@ -140,6 +141,17 @@ public class LoginClServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        Cookie cookies[] = req.getCookies();
+        if (cookies != null) {
+            for (int i = 0; i < cookies.length; i++) {
+                cookies[i].setMaxAge(0);
+                resp.addCookie(cookies[i]);
+            }
+        }
+        //删除session
+        req.getSession().removeAttribute("username");
+
         resp.sendRedirect(req.getServletContext().getInitParameter("HOME_URL") + "Login.do");
     }
 }

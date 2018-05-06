@@ -27,6 +27,85 @@ public class UsersService{
         return (rowCount-1)/pageSize+1;
     }
 
+    /**
+     * 获取数据条数
+     *
+     * @return
+     */
+    public int getRowCount() {
+        String sql = "select count(*) from users";
+        ResultSet rs = SqlHelper.executeQuery(sql, null);
+        int rowCount = 0;
+
+        try {
+            rs.next();
+            rowCount = rs.getInt(1);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } finally {
+            SqlHelper.close(rs, SqlHelper.getPs(), SqlHelper.getCt());
+        }
+        return rowCount;
+    }
+
+    /**
+     * 根据关键词获取数据条数
+     *
+     * @param keyword
+     * @return
+     */
+    public int getRowCountBykws(String keyword) {
+
+        String sql = "select * from users where username like '%" + keyword + "%' OR email like '%" + keyword + "%' " +
+            "order by id asc";
+        if (keyword.equals("")) sql = "select * from users order by id asc";
+
+        ResultSet rs = SqlHelper.executeQuery(sql, null);
+        int rowCount = 0;
+
+        try {
+            if (rs.next()) rowCount = rs.getInt(1);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            SqlHelper.close(rs, SqlHelper.getPs(), SqlHelper.getCt());
+        }
+        return rowCount;
+
+    }
+
+    public ArrayList getUserList(String keyword, int pageNow, int pageSize) {
+        ArrayList<User> al = new ArrayList<User>();
+        String sql = "select * from users where username like '%" + keyword + "%' OR email like '%" + keyword + "%' " +
+            "order by id asc limit " + pageSize * (pageNow - 1) + "," + pageSize;
+
+        if (keyword.equals(""))
+            sql = "select * from users order by id asc limit " + pageSize * (pageNow - 1) + "," + pageSize;
+
+        System.out.println("Keywords:" + keyword);
+
+        ResultSet rs = SqlHelper.executeQuery(sql, null);
+        try {
+            while (rs.next()) {
+                User us = new User();
+                us.setId(rs.getString("id"));
+                us.setName(rs.getString("username"));
+                us.setEmail(rs.getString("email"));
+                us.setGrade(rs.getString("grade"));
+                us.setPwd(rs.getString("passwd"));
+                us.setUnknow(rs.getString("unknow"));
+                us.setRemark(rs.getString("remark"));
+                //将用户的对象加入集合
+                al.add(us);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            SqlHelper.close(rs, SqlHelper.getPs(), SqlHelper.getCt());
+        }
+        return al;
+    }
     //按照分页来获取用户
     //公司返回处理方式  ResultSet -> User对象 -> ArrayList(集合)
 //    public ArrayList getUsersByPage(int pageNow,int pageSize){

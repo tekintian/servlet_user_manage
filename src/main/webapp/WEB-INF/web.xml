@@ -67,17 +67,14 @@
         <servlet-class>cn.tekin.controller.UserClServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>CreateCookie</servlet-name>
-        <servlet-class>cn.tekin.servlet_demo.CreateCookie</servlet-class>
+        <servlet-name>ShowBook</servlet-name>
+        <servlet-class>cn.tekin.servlet_demo.ShowBook</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ReadCookie1</servlet-name>
-        <servlet-class>cn.tekin.servlet_demo.ReadCookie1</servlet-class>
+        <servlet-name>BuyBookCl</servlet-name>
+        <servlet-class>cn.tekin.servlet_demo.BuyBookCl</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>VisitTime</servlet-name>
-        <servlet-class>cn.tekin.servlet_demo.VisitTime</servlet-class>
-    </servlet>
+
 
     <!--<servlet>-->
         <!--<servlet-name>LoginClServlet</servlet-name>-->
