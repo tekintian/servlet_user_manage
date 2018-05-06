@@ -13,6 +13,10 @@
         <param-name>CPATH</param-name>
         <param-value>/servlet_user_manage/</param-value>
     </context-param>
+    <context-param>
+        <param-name>DATE_FORMAT</param-name>
+        <param-value>Y-m-d HH:mm:ss E</param-value>
+    </context-param>
     <!--密码加扰字符串-->
     <context-param>
         <param-name>pwSalt</param-name>
@@ -69,6 +73,10 @@
     <servlet>
         <servlet-name>ReadCookie1</servlet-name>
         <servlet-class>cn.tekin.servlet_demo.ReadCookie1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VisitTime</servlet-name>
+        <servlet-class>cn.tekin.servlet_demo.VisitTime</servlet-class>
     </servlet>
 
     <!--<servlet>-->

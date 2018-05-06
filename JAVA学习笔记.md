@@ -18,6 +18,70 @@ System.out.println(r1.equal(r2));//返回true
 
 在String比较字符串的时候一定要使用equal，否则会发现字符串一样也判断不等，这是初学者容易出错的地方。
 
+#java 时间戳获取
+```java
+ long timestamp=new Date().getTime();
+ SimpleDateFormat simpleDateFormat=new SimpleDateFormat(getServletContext().getInitParameter("Y-m-d HH:mm:ss E"));
+ 
+simpleDateFormat.format(timestamp);
+
+```
+       
+#cookie操作
+
+```java
+//获取表达传递来的值
+String isRember = request.getParameter("isRember");
+
+//使用COOKIE记住用户名
+if (isRember.equals("1")) {
+    //增加cookie
+    Cookie imcookie=new Cookie("username", username);
+    imcookie.setMaxAge(3600*24*7);
+    imcookie.setPath("/");
+    response.addCookie(imcookie);
+}else{
+    //清除cookie
+    Cookie []delCookies=request.getCookies();
+    if (delCookies != null) {
+        for (int i = 0; i <delCookies.length ; i++) {
+            if (delCookies[i].getName().equals("username")){
+                delCookies[i].setMaxAge(0);
+                delCookies[i].setPath("/");
+                response.addCookie(delCookies[i]);
+                System.out.println("delete cookie"+i);
+            }
+        }
+
+    }
+}
+//记住用户名end
+
+
+```
+- 使用cookie记录登陆时间需要特别注意，不能直接记录 带有空格的时间，需要使用时间戳
+
+- 取出时间戳格式的时候需要转换类型为Long
+```java
+ SimpleDateFormat simpleDateFormat=new SimpleDateFormat(getServletContext().getInitParameter("Y-m-d HH:mm:ss"));
+
+
+String lastLoginTime="";
+//从cookie中取出时间戳并格式化
+Cookie []cookies=request.getCookies();
+if (cookies != null) {
+    for(int i=0; i<cookies.length; i++){
+        if("lastLoginTime".equals(cookies[i].getName())) {
+            lastLoginTime = simpleDateFormat.format(Long.parseLong(cookies[i].getValue()));
+        }
+    }
+}
+
+//输出格式后的时间
+System.out.println(lastLoginTime);
+
+```
+
 
 
 ## http响应消息头详解

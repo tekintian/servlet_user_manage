@@ -2,11 +2,9 @@ package cn.tekin.service;
 
 import cn.tekin.domain.User;
 import cn.tekin.utils.SqlHelper;
-import groovy.sql.Sql;
 
-import java.sql.*;
-
-import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class UsersService{
@@ -168,7 +166,6 @@ public class UsersService{
         String parameters[]={userx.getName(),userx.getPwd()};
 
         ArrayList rs=SqlHelper.ExecuteReader(sql, parameters);
-
 
         if(rs.size()==1){
             u=new User();
