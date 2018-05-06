@@ -1,4 +1,4 @@
-# JAVA中,equal和==的区别
+## JAVA中,equal和==的区别
 一、比较对象为基本数据类型（byte,short,char,int,long,float,double,boolean）
 比较两个基本数据类型是否相等用==，因为只有类才会有equals方法。
 备注：String不是基本数据类型
@@ -18,7 +18,7 @@ System.out.println(r1.equal(r2));//返回true
 
 在String比较字符串的时候一定要使用equal，否则会发现字符串一样也判断不等，这是初学者容易出错的地方。
 
-#java 时间戳获取
+##java 时间戳获取
 ```java
  long timestamp=new Date().getTime();
  SimpleDateFormat simpleDateFormat=new SimpleDateFormat(getServletContext().getInitParameter("Y-m-d HH:mm:ss E"));
@@ -27,7 +27,7 @@ simpleDateFormat.format(timestamp);
 
 ```
        
-#cookie操作
+## cookie操作
 
 ```java
 //获取表达传递来的值
