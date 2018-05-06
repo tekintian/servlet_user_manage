@@ -7,33 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ead8cfd-b6cb-4e9c-872b-9d264c310996" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/Fail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/Success.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/controller/AddUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/controller/DelClServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/controller/EditClServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptAES.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptDES.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptDES3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptMD5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptRSA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptSHA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/utils/FileHashUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/utils/HashEncrypt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/utils/SqlHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/controller/UserClServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/CreateCookie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/ReadCookie1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/utils/Hash.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/common/MyInitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/common/MyInitServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/controller/LoginClServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/controller/LoginClServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/service/UsersService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/view/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/view/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/tekin/view/ManageUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/tekin/view/ManageUsers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/笔记" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -140,7 +122,95 @@
     <favorites_list name="servlet_user_manage" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="ManageUsers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/ManageUsers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="41" column="50" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="41" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="36" column="145" selection-start-line="36" selection-start-column="145" selection-end-line="36" selection-end-column="145" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateCookie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/CreateCookie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hash.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/Hash.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EncryptRSA.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptRSA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1113">
+              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashEncrypt.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/HashEncrypt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadCookie1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/ReadCookie1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -559,9 +629,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/timeout.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/Servlet3.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/SendMailThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/CheckTask.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
@@ -582,12 +649,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/dbinfo.properties" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/domain/User.java" />
         <option value="$PROJECT_DIR$/build/libs/exploded/servlet_user_manage-1.0-SNAPSHOT.war/WEB-INF/classes/dbinfo.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/view/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptDES.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptDES3.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptAES.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptRSA.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptMD5.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/FileHashUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptSHA.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/HmacSHA.java" />
@@ -603,11 +668,18 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/Demo.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/SqlHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/view/ManageUsers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/service/UsersService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/controller/AddUserServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/tekin/controller/EditClServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/controller/UserClServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/view/ManageUsers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/view/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/CreateCookie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/ReadCookie1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/CreateCookie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptMD5.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/tekin/utils/Hash.java" />
       </list>
     </option>
   </component>
@@ -641,6 +713,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -687,42 +760,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tekin" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servlet_user_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servlet_user_manage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tekin" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servlet_user_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servlet_user_manage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tekin" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servlet_user_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servlet_user_manage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tekin" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servlet_user_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servlet_user_manage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tekin" type="462c0819:PsiDirectoryNode" />
               <item name="servlet_demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -733,15 +770,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tekin" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servlet_user_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servlet_user_manage" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tekin" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="servlet_user_manage" type="b2602c69:ProjectViewProjectNode" />
@@ -804,7 +832,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -849,7 +876,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat_9.0">
+  <component name="RunManager" selected="Application.Hash">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.tekin.servlet_demo.Demo" />
       <module name="servlet_user_manage_main" />
@@ -872,8 +899,8 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="FileHashUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.tekin.utils.FileHashUtil" />
+    <configuration name="Hash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.tekin.utils.Hash" />
       <module name="servlet_user_manage_main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -1020,19 +1047,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat_9.0" />
-      <item itemvalue="Application.FileHashUtil" />
       <item itemvalue="Application.EncryptSHA" />
       <item itemvalue="Application.HmacSHA" />
       <item itemvalue="Application.HashEncrypt" />
       <item itemvalue="Application.Demo" />
+      <item itemvalue="Application.Hash" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Hash" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.HashEncrypt" />
         <item itemvalue="Application.HmacSHA" />
         <item itemvalue="Application.EncryptSHA" />
-        <item itemvalue="Application.FileHashUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -1055,11 +1082,12 @@
       <workItem from="1525486858184" duration="23829000" />
       <workItem from="1525525658802" duration="5540000" />
       <workItem from="1525532269882" duration="6177000" />
+      <workItem from="1525565059105" duration="7996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99437000" />
+    <option name="totallyTimeSpent" value="107433000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1075,7 +1103,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="sbt" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.18613334" side_tool="true" visible="true" weight="0.3206934" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5024" side_tool="true" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.79146665" weight="0.32827735" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
@@ -1088,19 +1116,19 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49813333" weight="0.32827735" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.47413334" weight="0.2936078" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.47306666" weight="0.2936078" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.49866667" weight="0.32827735" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49866667" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8138667" weight="0.3206934" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.4976" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.81333333" weight="0.3206934" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49706668" weight="0.32827735" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6602871" visible="true" weight="0.2464" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.65912765" visible="true" weight="0.24906667" />
       <window_info anchor="right" id="AppDynamics" order="3" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" sideWeight="0.49706668" weight="0.32827735" />
       <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="2" sideWeight="0.33971292" side_tool="true" visible="true" weight="0.2464" />
+      <window_info id="Web" order="2" sideWeight="0.34087238" side_tool="true" visible="true" weight="0.24906667" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.16853334" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -1128,21 +1156,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/timeout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/GetAllParamTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/MyTools.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1241,13 +1254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptRSA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1008">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/ReadPassword.java" />
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_162/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1292,13 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="16" column="9" selection-start-line="12" selection-start-column="7" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptMD5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -1366,20 +1365,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/HashEncrypt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/GetAllParam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="22" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1397,23 +1386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/common/MyInitServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1421,55 +1393,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="36" column="9" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="36" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/ManageUsers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/controller/AddUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="80" column="103" selection-start-line="80" selection-start-column="63" selection-end-line="80" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/SqlHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
           <caret line="226" selection-start-line="226" selection-end-line="226" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2435#2436#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/controller/EditClServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="73" column="106" selection-start-line="73" selection-start-column="106" selection-end-line="73" selection-end-column="106" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1487,9 +1414,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="777">
           <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1497,6 +1421,111 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="110" column="9" lean-forward="true" selection-start-line="110" selection-start-column="9" selection-end-line="111" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/controller/AddUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="81" column="71" lean-forward="true" selection-start-line="81" selection-start-column="71" selection-end-line="81" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/controller/EditClServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="69" column="51" lean-forward="true" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/controller/UserClServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/ManageUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="41" column="50" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="41" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/view/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="36" column="145" selection-start-line="36" selection-start-column="145" selection-end-line="36" selection-end-column="145" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/ReadCookie1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/servlet_demo/CreateCookie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/EncryptRSA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1113">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/HashEncrypt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/tekin/utils/Hash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

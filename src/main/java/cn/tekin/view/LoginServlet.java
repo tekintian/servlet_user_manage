@@ -22,6 +22,9 @@ public class LoginServlet extends HttpServlet {
         response.setCharacterEncoding("utf-8");
         PrintWriter out = response.getWriter();
         //返回一个界面（html技术）
+        out.println("<title>用户列表</title>+" +
+            "<link href=\"https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css\" rel=\"stylesheet\">+" +
+            "<div class='container'>");
         out.println("<h1>用户登录</h1>");
         //action 应该这样写  /web应用名/Servlet的url
         out.println("<form action='"+ request.getContextPath() +"/LoginClServlet' method='post'>");
@@ -36,7 +39,7 @@ public class LoginServlet extends HttpServlet {
 
         }
 
-        out.println();
+        out.println("</div>");
     }
 
 }

@@ -58,6 +58,18 @@
         <servlet-name>AddUserServlet</servlet-name>
         <servlet-class>cn.tekin.controller.AddUserServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UserClServlet</servlet-name>
+        <servlet-class>cn.tekin.controller.UserClServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateCookie</servlet-name>
+        <servlet-class>cn.tekin.servlet_demo.CreateCookie</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ReadCookie1</servlet-name>
+        <servlet-class>cn.tekin.servlet_demo.ReadCookie1</servlet-class>
+    </servlet>
 
     <!--<servlet>-->
         <!--<servlet-name>LoginClServlet</servlet-name>-->

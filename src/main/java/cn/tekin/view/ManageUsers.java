@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
@@ -26,8 +27,10 @@ public class ManageUsers extends HttpServlet {
         this.home_url=getServletContext().getInitParameter("HOME_URL");
         //session
         User user=(User)request.getSession().getAttribute("userObj");
+        //创建一个session
+//        HttpSession hs=request.getSession(true);
+//        String myname=hs.getAttribute("username").toString();//获取域中的session
         if (null == user){
-            System.out.println("redirect....");
             response.sendRedirect(home_url+"Login.do");
         }else{
 //SESSION
@@ -65,6 +68,11 @@ public class ManageUsers extends HttpServlet {
         //更简洁的算法
 //        pageCount=(rowCount-1)/pageSize+1;
 
+            //定义变量
+            int beginx=1;
+            int endx=1;
+            int step=4;//分页显示步长
+
         try {
 
             UsersService usersService=new UsersService();
@@ -77,10 +85,13 @@ public class ManageUsers extends HttpServlet {
             out.println("<table width=90%>");
             out.println("<tr><th>id</th><th>用户名</th><th>email</th><th>级别</th><th>密码</th><th>备注</th><th>管理</th></tr>");
 
+            //定义颜色数组
+            String []mycolor={"pink","yellow","cyan"};
+            int j=0;
             //循环显示所有用户信息: 对密码信息做掩码处理
 
             for (User u:al) {
-                out.println("<tr><td>" + u.getId() +
+                out.println("<tr bgcolor="+mycolor[(++j)%3]+"><td>" + u.getId() +
                  "</td><td>" + u.getName() +
                  "</td><td>" + u.getEmail() +
                 "</td><td>" + u.getGrade() +
@@ -96,11 +107,20 @@ public class ManageUsers extends HttpServlet {
                out.println("<a href='" + home_url + "ManageUsers?pageNow=" + (pageNow-1) + "'>上一页</a> ");
            }
             //显示分页
+            beginx=pageNow;
+            endx=pageNow;
+            if(pageNow-step>0) beginx=pageNow-step;
+            if(pageNow+step<=pageCount) endx=pageNow+step;
+            for(int i=beginx;i<=endx;i++) out.println("<a href='"+ home_url +"ManageUsers?pageNow="+i+"'><"+i+"></a>");
+
+
+           /*
+            //显示分页
             for(int i = 1; i <=pageCount ; i++) {
 
                 out.println("<a href='"+home_url+"ManageUsers?pageNow="+i+"'> "+i+" </a>");
 
-            }
+            }*/
             if (pageNow!=pageCount) {
                 //显示上一页
                 out.println("<a href='" + home_url + "ManageUsers?pageNow=" + (pageNow + 1) + "'>下一页</a> ");
@@ -127,7 +147,10 @@ public class ManageUsers extends HttpServlet {
         } finally {
            out.close();
         }
-        out.println("<hr/><img src='./images/webstore-consumer.jpg'></div>");
+            out.println("<br><br>你的IP="+request.getRemoteAddr()+"<br>");
+            out.println("你的机器名是"+request.getRemoteHost()+"<br>");
+
+            out.println("<hr/><img src='./images/webstore-consumer.jpg'></div>");
 
         //SESSION END
         }
