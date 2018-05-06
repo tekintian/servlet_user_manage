@@ -1,4 +1,4 @@
-package cn.tekin.servlet_demo;
+package cn.tekin.servlet_demo.book;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,13 +11,15 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
-@WebServlet("/demo/BuyBookCl")
+@WebServlet("/demo/book/BuyBookCl")
 public class BuyBookCl extends HttpServlet {
     //	http://localhost:8080/myCart/BuyBookCl
+    String HOME_URL = "";
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=utf-8");
         //	response.setCharacterEncoding("utf-8");
         PrintWriter out = response.getWriter();
+        HOME_URL = request.getServletContext().getInitParameter("HOME_URL");
 
         //接收用户要购买书的名字
         //	String bookname=request.getParameter("name");
@@ -105,7 +107,7 @@ public class BuyBookCl extends HttpServlet {
 		 */
 
         //跳转到显示购物车的页面
-        request.getRequestDispatcher("/ShowMyCart").forward(request, response);
+        request.getRequestDispatcher("/demo/book/ShowMyCart").forward(request, response);
 
 		/*
 		//创建一个session， 并放入一个属性

@@ -1,4 +1,4 @@
-package cn.tekin.servlet_demo;
+package cn.tekin.servlet_demo.book;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,13 +10,15 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.Iterator;
 
-@WebServlet("/demo/ShowMyCart")
+@WebServlet("/demo/book/ShowMyCart")
 public class ShowMyCart extends HttpServlet {
     //	http://localhost:8080/myCart/ShowMyCart
+    String HOME_URL = "";
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=utf-8");
         //	response.setCharacterEncoding("utf-8");
         PrintWriter out = response.getWriter();
+        HOME_URL = request.getServletContext().getInitParameter("HOME_URL");
 
         //从session中取出购买的书
         //	String bookname=(String) request.getSession().getAttribute("mybooks");
@@ -49,7 +51,7 @@ public class ShowMyCart extends HttpServlet {
 
         //	out.println("<br/><br/><a href='/myCart/ShowBook'>返回购物大厅</a>");
         //这里也需要地址重写
-        String url = response.encodeURL("/myCart/ShowBook");
+        String url = response.encodeURL(HOME_URL + "/demo/book/ShowBook");
         out.println("<br/><br/><a href='" + url + "'>返回购物大厅</a>");
     }
 

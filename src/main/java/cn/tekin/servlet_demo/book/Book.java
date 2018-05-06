@@ -1,4 +1,4 @@
-package cn.tekin.servlet_demo;
+package cn.tekin.servlet_demo.book;
 
 //Serializable 序列化，便于在网络中传送 往集合中填放的时候可以区分
 public class Book implements java.io.Serializable {

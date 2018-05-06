@@ -1,4 +1,4 @@
-package cn.tekin.servlet_demo;
+package cn.tekin.servlet_demo.book;
 
 import java.util.ArrayList;
 

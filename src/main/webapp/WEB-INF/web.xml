@@ -68,11 +68,11 @@
     </servlet>
     <servlet>
         <servlet-name>ShowBook</servlet-name>
-        <servlet-class>cn.tekin.servlet_demo.ShowBook</servlet-class>
+        <servlet-class>cn.tekin.servlet_demo.book.ShowBook</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>BuyBookCl</servlet-name>
-        <servlet-class>cn.tekin.servlet_demo.BuyBookCl</servlet-class>
+        <servlet-class>cn.tekin.servlet_demo.book.BuyBookCl</servlet-class>
     </servlet>
 
 
