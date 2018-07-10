@@ -26,7 +26,7 @@ dependencies {
 
 //    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
 
-    compile('javax.servlet:javax.servlet-api:4.0.1')
+    compileOnly('javax.servlet:javax.servlet-api:4.0.1')
     // use swagger2 for api documentation
     compile('io.swagger:swagger-jersey2-jaxrs:1.5.10')
 

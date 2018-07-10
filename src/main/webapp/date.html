@@ -1,0 +1,23 @@
+
+ 
+<form action="my2.jsp">
+	<input type="text" name="passwd" id="passwd" class="myc1">
+	<input type="password" name="passwd2" class="myc1">
+	<input type='checkbox' value='keep' name='iskeepinfo'/>在此电脑上保留用户名<br/><br/>
+<input type='checkbox' value='nokeep' name='iskeepinfo'/>不保留用户名<br/><br/>
+
+<input type="submit" value="Submit this form" onclick="return forward();"/>
+</form>
+<script>
+function forward(){
+	// var pwd=document.getElementById('passwd');
+	var pw2=document.getElementsByClassName('myc1');
+	console.log(pw2);
+	if (pw2[0].value=='') {
+		alert("用户名不能为空");
+		pw2.focus();
+		return false;
+	} 
+	return false;
+}
+</script>

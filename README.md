@@ -287,6 +287,22 @@ String 参数=request.getParameter(“参数名”);
 
 
 
+# IDEA gradle [build.gradle]添加依赖包 包含 provided 级别依赖包编译错误解决方案
+	将 provided 改为 compileOnly ; 因为在新版本的gradle中已经移除了provided，使用compileOnly这个替代  
+如
+```gradle
+#编译错误
+provided group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+# 将provided改为compileOnly
+compileOnly group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+
+```
+
+	PS: 必须是 compileOnly, 如果是 compile 在tomcat运行的时候回报无法找到类的错误！
+
 
 Git本地创建后再增加远程git仓库合并问题解决：
 git pull origin master --allow-unrelated-histories
+
+
+
